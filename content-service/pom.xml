@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>top.dc</groupId>
-    <artifactId>user-service</artifactId>
+    <artifactId>content-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-service</name>
-    <description>user-service</description>
+    <name>content-service</name>
+    <description>content-service</description>
 
     <developers>
         <developer/>
@@ -64,10 +64,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
+
         <!--mysql驱动依赖-->
         <dependency>
             <groupId>com.mysql</groupId>
@@ -85,7 +82,15 @@
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
             <version>3.5.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
