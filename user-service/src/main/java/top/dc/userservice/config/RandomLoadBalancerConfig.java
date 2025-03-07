@@ -1,4 +1,4 @@
-package config;
+package top.dc.userservice.config;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.loadbalancer.core.RandomLoadBalancer;

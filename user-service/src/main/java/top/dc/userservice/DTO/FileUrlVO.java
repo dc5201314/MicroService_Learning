@@ -1,0 +1,12 @@
+package top.dc.userservice.DTO;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class FileUrlVO {
+    private String fileUrl;
+}
