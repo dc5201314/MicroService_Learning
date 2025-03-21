@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import top.dc.contentservice.VO.UserVO;
 
-@FeignClient(name = "user-service")
+@FeignClient(name = "user-service",fallbackFactory = UserServiceFallBackFactory.class)
+
 public interface UserFeignClient {
     @GetMapping("/user/{id}")
     UserVO getUserById(@PathVariable("id") Integer id);

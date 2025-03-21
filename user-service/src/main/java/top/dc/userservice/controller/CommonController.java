@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import top.dc.userservice.DTO.FileUrlVO;
 import top.dc.userservice.Service.CommonService;
+import top.dc.userservice.VO.FoodRecognitionVO;
 
 
 @RestController
@@ -19,5 +20,8 @@ public class CommonController {
     public FileUrlVO upload(@RequestParam("file") MultipartFile file) {
         return commonService.upload(file);
     }
-
+    @PostMapping("/upload/recognize-food")
+    public FoodRecognitionVO uploadAndRecognizeFood(@RequestParam("file") MultipartFile file) {
+        return commonService.uploadAndRecognizeFood(file);
+    }
 }

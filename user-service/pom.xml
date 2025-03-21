@@ -79,7 +79,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>imagerecog20190930</artifactId>
+            <version>1.0.11</version>
+        </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
@@ -115,14 +119,23 @@
         </dependency>
 
         <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version> <!-- 具体版本可以根据需要选择 -->
+            <version>3.12.0</version>
         </dependency>
         <dependency>
             <groupId>com.konghq</groupId>
             <artifactId>unirest-java</artifactId>
-            <version>3.11.11</version> <!-- 根据需要选择版本 -->
+            <version>3.11.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
 
     </dependencies>

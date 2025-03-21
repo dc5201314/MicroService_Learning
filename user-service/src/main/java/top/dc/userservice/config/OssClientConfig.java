@@ -16,6 +16,7 @@ public class OssClientConfig {
         System.out.println("OSS AccessKeyId: " + ossConfig.getAccessKeyId());
         System.out.println("OSS BucketName: " + ossConfig.getBucketName());
     }
+
     @Bean
     public OSS createOssClient() {
         return new OSSClientBuilder().build(
